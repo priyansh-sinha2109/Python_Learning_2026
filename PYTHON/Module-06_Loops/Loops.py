@@ -160,3 +160,44 @@ if b == a:
     print("Hence number is palindrome")
 else:
     print("Hence number is not Palindrome")
+
+
+#While Loop
+
+a = 256
+s= 0
+
+while a > 0:
+   b = a % 10 
+   s = b + s * 10
+   a = a // 10
+
+print(s)
+
+#Random number Guess:-
+
+import random
+
+num = random.randint(1,11)
+
+tries = 0
+
+while True:
+  guess = int(input("Please Guess your number between 1 to 10 :- "))
+
+  if num == guess:
+    tries += 1
+    print(f"You are right you guess the number is {tries} tries")
+    break
+  elif num < guess:
+      tries+=1
+      print("Go thought little number")
+  elif num > guess:
+      tries+=1
+      print("Go thought higher number")
+  else:
+    tries+= 1
+    print("You are wrong")
+
+
+  print(num)
