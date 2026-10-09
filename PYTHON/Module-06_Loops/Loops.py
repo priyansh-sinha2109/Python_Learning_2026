@@ -174,7 +174,7 @@ while a > 0:
 
 print(s)
 
-#Random number Guess:-
+#Random number Guess Question:-
 
 import random
 
